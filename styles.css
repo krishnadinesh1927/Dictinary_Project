@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: black; /* Change header background color */
+    color: #3498db; /* Change header text color */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#wordInput {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    background-color: black;
+    border: 2px solid purple;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+}
+
+#searchButton {
+    padding: 5px 10px;
+    background-color: black; /* Change search button background color */
+    color: #3498db; /* Change search button text color */
+    border: 2px solid purple;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.word-details, .language-translation, .content-text {
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    background-color: black;
+    border: 2px solid purple;
+    color: white;
+    border-radius: 10px;
+}
+
+#wordMeaning, #translatedWord {
+    font-size: 18px;
+}
+
+.search-section, .word-details, .language-translation, .content-text, select {
+    animation: glowingBorder 1s infinite alternate;
+}
+
+@keyframes glowingBorder {
+    0% {
+        border-color: purple;
+    }
+    100% {
+        border-color: #3498db;
+    }
+}
